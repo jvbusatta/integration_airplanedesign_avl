@@ -1,0 +1,100 @@
+TCC - Integração AVL - Python
+
+--> gerar geometria da aeronave - objetivo: otimização mtow
+
+
+Quarta-feira - 17:30
+reunião 1x por semana - atualização
+------------------------------------------------------------------------------------------------------------------------------------------------
+semana 1 --> 22/06
+
+	Acosta:
+
+	Busatta:	--> Troca de dados(input, output) avl - python
+		--> (?) escrita tcc: forma de desenvolver equações
+
+	Urbano:
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+semana 2 --> 29/06
+
+	Acosta:	--> cálculo de massa/peso do avião (avl) - estudo
+	    	--> momento de inércia (avl) - estudo
+	    	--> algoritmo evolutivo - primeira implemetação -- modelo simples
+		    --> escrita tcc - utilização algoritmo evolutivo - genético
+	
+	Busatta:	--> avaliação critérios estabilidade
+		        --> cálculo de margem estática do avião	
+		        --> escrita tcc - explicação estabilidade - critérios
+
+	Urbano:	--> função para encontrar cl_max
+		    --> escrita tcc - refinar
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+semana 3 --> 06/07
+
+	Acosta: 	--> melhoria algoritmo genético para a objetivo em questão 
+                --> utilização ou não do cálculo de massa e momento de inércia do avl
+
+	Busatta:	--> integração com dados urbano para calculo mtow	
+                --> definir cd de decolagem
+                --> terminar definições iniciais do projeto (inputs)
+
+	Urbano:	--> integração com dados busatta para calculo mtow	
+            --> definir cd de decolagem
+
+* ver com professor Nicholas proximo passo escrita tcc
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+semana 5 --> 13/07
+
+	Acosta:	--> avaliação distribuição de shrenk - 
+		    --> implementação do algoritmo genético com obenção de resultados satisfatórios
+
+	Busatta:	--> finalização dos calculos para melhor mtow
+
+	Urbano:	--> finalização dos calculos para melhor mtow
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+semana 5 --> 20/07
+
+	Acosta: --> finalização/refinamento algoritmo
+            --> retomar/avaliar parte escrita tcc
+
+	Busatta: --> finalização/refinamento algoritmo
+             --> retomar/avaliar parte escrita tcc
+
+	Urbano: --> finalização/refinamento algoritmo
+            --> retomar/avaliar parte escrita tcc
+
+
+
+--> 1. criação do arquivo da geometria do avião
+--> 2. leitura do arquivo da geometria gerada
+--> 3. simulação da geometria gerada
+--> 4. pontuação para continuação ou não da geometria usada
+--> 5. exclusão da geometria não apropriada
+------------------------------------------------------------------------------------------------------------------------------------------------
+critérios(funções) que definirão a geometria (pontuação)
+
+aerodinamica
+
+--> limites como angulos (histórico), afilamento, envergadura, razão de aspecto
+--> priorizar geometrias com maior capacidade de geração de sustentação e menor arrasto
+
+
+estabilidade
+
+--> definir os melhores valores para os dados a serem processados
+--> avaliar as características (margem estática e ponto neutro) da geometria gerada
+--> escrever no notepad com base nas eqs o volume de carga 
+--> pontuação para angulo de diedro, para objetivo de carga
+
+estruturas
+
+--> função para cálculo de distribuição de peso ( massa - pelo avl)
+--> entender as funções de massa e momento deinercia do avl
+------------------------------------------------------------------------------------------------------------------------------------------------
+--> função cálculo/escrita de carga estrutural (longarina) 
+--> aplicação do algoritmo genético com objetivo de capacidade de carga
